@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gramps Franz | Stories & Wisdom</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Quicksand:wght@300;500&display=swap');
+        
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background-color: #f9f7f1;
+        }
+        
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .hero-pattern {
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23203731' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        
+        .polaroid-effect {
+            background: white;
+            padding: 1rem 1rem 3rem 1rem;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transform: rotate(-2deg);
+            transition: all 0.3s ease;
+        }
+        
+        .polaroid-effect:hover {
+            transform: rotate(0deg) scale(1.05);
+        }
+        
+        .typewriter {
+            overflow: hidden;
+            border-right: .15em solid #d4a76a;
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: .15em;
+            animation: 
+                typing 3.5s steps(40, end),
+                blink-caret .75s step-end infinite;
+        }
+
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: #d4a76a; }
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-[#203731] text-[#FFB612] shadow-md">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <i class="fas fa-book-open text-2xl"></i>
+                <a href="#" class="text-2xl font-bold">Gramps Franz</a>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#" class="hover:text-amber-200 transition">Home</a>
+                <a href="#" class="hover:text-amber-200 transition">Stories</a>
+                <a href="#" class="hover:text-amber-200 transition">Photos</a>
+                <a href="#" class="hover:text-amber-200 transition">Wisdom</a>
+                <a href="#" class="hover:text-amber-200 transition">Contact</a>
+            </div>
+            <button class="md:hidden focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-pattern py-20">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4">Hello, I'm <span class="text-[#FFB612]">Gramps Franz</span></h1>
+                <p class="text-xl md:text-2xl mb-6 typewriter">Sharing stories, wisdom, and memories from my journey...</p>
+                <div class="flex space-x-4">
+                    <button class="bg-[#FFB612] hover:bg-[#e6a410] text-[#203731] px-6 py-3 rounded-full shadow-lg transition transform hover:scale-105">
+                        Read My Stories
+                    </button>
+                    <button class="border-2 border-[#FFB612] text-[#FFB612] hover:bg-[#203731] px-6 py-3 rounded-full shadow-lg transition transform hover:scale-105">
+                        Get to Know Me
+                    </button>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <div class="polaroid-effect w-3/4 md:w-2/3">
+                    <img src="https://images.unsplash.com/photo-1536184071535-9e39baf5066e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80" 
+                         alt="Gramps Franz" 
+                         class="w-full h-auto object-cover">
+                    <p class="text-center mt-2 text-gray-600 font-serif italic">"Life's greatest lessons"</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Featured Stories -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Featured Stories</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Story 1 -->
+                <div class="bg-[#f0f0f0] rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition">
+                    <img src="https://images.unsplash.com/photo-1500382018108-844b52b18c9b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80" 
+                         alt="Countryside" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Growing Up in the Countryside</h3>
+                        <p class="text-gray-600 mb-4">How simple life was when I was a boy, and the lessons it taught me about hard work and community.</p>
+                        <a href="#" class="text-amber-700 hover:text-amber-900 font-medium">Read More →</a>
+                    </div>
+                </div>
+                
+                <!-- Story 2 -->
+                <div class="bg-amber-50 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition">
+                    <img src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80" 
+                         alt="Military Service" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">My Years in Service</h3>
+                        <p class="text-gray-600 mb-4">The challenges and camaraderie of military life, and how it shaped my worldview.</p>
+                        <a href="#" class="text-amber-700 hover:text-amber-900 font-medium">Read More →</a>
+                    </div>
+                </div>
+                
+                <!-- Story 3 -->
+                <div class="bg-amber-50 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition">
+                    <img src="https://images.unsplash.com/photo-1529333164857-3f1164d1cb24?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80" 
+                         alt="Family" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Building a Family</h3>
+                        <p class="text-gray-600 mb-4">The joys and challenges of raising children and watching them grow into their own lives.</p>
+                        <a href="#" class="text-amber-700 hover:text-amber-900 font-medium">Read More →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wisdom Section -->
+    <section class="py-16 bg-[#f0f0f0]">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Gramps' Words of Wisdom</h2>
+            <div class="max-w-3xl mx-auto">
+                <div class="bg-white p-8 rounded-lg shadow-md mb-8">
+                    <p class="text-xl italic mb-4">"The secret to a happy life isn't in having what you want, but in wanting what you have."</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 rounded-full bg-amber-200 flex items-center justify-center mr-4">
+                            <i class="fas fa-quote-left text-amber-700"></i>
+                        </div>
+                        <span class="font-medium">Gramps Franz</span>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="font-bold text-lg mb-2">On Hard Times</h3>
+                        <p class="text-gray-700">"Tough times don't last, but tough people do. Every storm runs out of rain eventually."</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="font-bold text-lg mb-2">On Love</h3>
+                        <p class="text-gray-700">"Love isn't about finding the perfect person, but about seeing an imperfect person perfectly."</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="font-bold text-lg mb-2">On Aging</h3>
+                        <p class="text-gray-700">"Growing old is mandatory, but growing up is optional. Keep your sense of wonder alive."</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="font-bold text-lg mb-2">On Happiness</h3>
+                        <p class="text-gray-700">"Happiness is homemade. It's in the little things - a good book, a warm cup, a shared laugh."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery Preview -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Memory Lane</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition transform hover:-translate-y-1">
+                    <img src="https://images.unsplash.com/photo-1506790409786-287062b21cfe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80" 
+                         alt="Old photo" 
+                         class="w-full h-48 object-cover hover:scale-110 transition">
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition transform hover:-translate-y-1">
+                    <img src="https://images.unsplash.com/photo-1508511267-1e788b0e4d6e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80" 
+                         alt="Old photo" 
+                         class="w-full h-48 object-cover hover:scale-110 transition">
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition transform hover:-translate-y-1">
+                    <img src="https://images.unsplash.com/photo-1518893883321-db6a78302770?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80" 
+                         alt="Old photo" 
+                         class="w-full h-48 object-cover hover:scale-110 transition">
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition transform hover:-translate-y-1">
+                    <img src="https://images.unsplash.com/photo-1518893883321-db6a78302770?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80" 
+                         alt="Old photo" 
+                         class="w-full h-48 object-cover hover:scale-110 transition">
+                </div>
+            </div>
+            <div class="text-center mt-8">
+                <button class="bg-[#FFB612] hover:bg-[#e6a410] text-[#203731] px-6 py-3 rounded-full shadow-lg transition transform hover:scale-105">
+                    View More Memories
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="py-16 bg-[#203731] text-[#FFB612]">
+        <div class="container mx-auto px-6 max-w-4xl text-center">
+            <h2 class="text-3xl font-bold mb-4">Stay Updated</h2>
+            <p class="mb-8 text-xl">Subscribe to get my latest stories and words of wisdom delivered to your inbox.</p>
+            <form class="flex flex-col md:flex-row gap-4 max-w-2xl mx-auto">
+                <input type="email" placeholder="Your email address" 
+                       class="flex-grow px-4 py-3 rounded-full focus:outline-none text-gray-800">
+                <button type="submit" 
+                        class="bg-[#FFB612] hover:bg-[#e6a410] text-[#203731] px-6 py-3 rounded-full shadow-lg transition transform hover:scale-105">
+                    Subscribe
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#203731] text-[#FFB612] py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between">
+                <div class="mb-8 md:mb-0">
+                    <h3 class="text-xl font-bold text-amber-200 mb-4">Gramps Franz</h3>
+                    <p class="max-w-xs">Sharing a lifetime of stories, lessons, and memories for my family and anyone who might find them valuable.</p>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4 text-[#FFB612]">Explore</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="hover:text-white transition">Home</a></li>
+                            <li><a href="#" class="hover:text-white transition">Stories</a></li>
+                            <li><a href="#" class="hover:text-white transition">Photos</a></li>
+                            <li><a href="#" class="hover:text-white transition">Wisdom</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4 text-[#FFB612]">Connect</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="hover:text-white transition">About Me</a></li>
+                            <li><a href="#" class="hover:text-white transition">Contact</a></li>
+                            <li><a href="#" class="hover:text-white transition">Guestbook</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4 text-[#FFB612]">Follow</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="w-10 h-10 rounded-full bg-[#1a2d28] flex items-center justify-center hover:bg-[#FFB612] transition">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center hover:bg-amber-600 transition">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center hover:bg-amber-600 transition">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center">
+                <p>&copy; 2023 Gramps Franz. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple JavaScript for mobile menu toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('button.md\\:hidden');
+            const navLinks = document.querySelector('.md\\:flex.space-x-8');
+            
+            mobileMenuButton.addEventListener('click', function() {
+                navLinks.classList.toggle('hidden');
+                navLinks.classList.toggle('flex');
+                navLinks.classList.toggle('flex-col');
+                navLinks.classList.toggle('absolute');
+                navLinks.classList.toggle('top-16');
+                navLinks.classList.toggle('right-6');
+                navLinks.classList.toggle('bg-[#203731]');
+                navLinks.classList.toggle('p-4');
+                navLinks.classList.toggle('rounded-lg');
+                navLinks.classList.toggle('shadow-xl');
+                navLinks.classList.toggle('space-y-4');
+                navLinks.classList.toggle('space-x-8');
+            });
+            
+            // Typewriter effect restart
+            setInterval(function() {
+                const typewriter = document.querySelector('.typewriter');
+                typewriter.style.animation = 'none';
+                void typewriter.offsetWidth; // Trigger reflow
+                typewriter.style.animation = null;
+            }, 8000);
+        });
+    </script>
+</body>
+</html>
