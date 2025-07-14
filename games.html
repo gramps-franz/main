@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Links Hub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .game-box {
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        .game-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .game-box:nth-child(1) { background-color: #FF6B6B; }
+        .game-box:nth-child(2) { background-color: #4ECDC4; }
+        .game-box:nth-child(3) { background-color: #45B7D1; }
+        .game-box:nth-child(4) { background-color: #FFBE0B; }
+        .game-box:nth-child(5) { background-color: #FB5607; }
+        .game-box:nth-child(6) { background-color: #8338EC; }
+        .game-box:nth-child(7) { background-color: #3A86FF; }
+        .game-box:nth-child(8) { background-color: #FF006E; }
+        .game-box:nth-child(9) { background-color: #8AC926; }
+        
+        body {
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+            min-height: 100vh;
+        }
+        
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        .title-text {
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+<body class="text-white font-sans">
+    <div class="container mx-auto px-4 py-12">
+        <header class="text-center mb-12">
+            <h1 class="title-text text-4xl md:text-6xl font-bold mb-4">Game Links Hub</h1>
+            <p class="text-xl opacity-90">Click on any game to start playing!</p>
+        </header>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            <!-- Game Box 1 - Lockbox Puzzle -->
+            <a href="https://example.com/game7" target="_blank" class="game-box rounded-xl p-6 flex flex-col items-center justify-center h-48">
+                <i class="fas fa-lock text-4xl mb-3"></i>
+                <h3 class="text-xl font-bold mb-2">Lockbox Puzzle</h3>
+                <p class="text-center opacity-90">Solve the lockbox combinations</p>
+            </a>
+            
+            <!-- Game Box 2 -->
+            <a href="https://example.com/game2" target="_blank" class="game-box rounded-xl p-6 flex flex-col items-center justify-center h-48">
+                <i class="fas fa-chess-knight text-4xl mb-3"></i>
+                <h3 class="text-xl font-bold mb-2">Chess Masters (Coming Soon)</h3>
+                <p class="text-center opacity-90">Challenge players worldwide</p>
+            </a>
+            
+            <!-- Game Box 3 -->
+            <a href="https://example.com/game3" target="_blank" class="game-box rounded-xl p-6 flex flex-col items-center justify-center h-48">
+                <i class="fas fa-puzzle-piece text-4xl mb-3"></i>
+                <h3 class="text-xl font-bold mb-2">Puzzle Quest (Coming Soon)</h3>
+                <p class="text-center opacity-90">Solve challenging puzzles</p>
+            </a>
+            
+            <!-- Game Box 4 -->
+            <a href="https://example.com/game4" target="_blank" class="game-box rounded-xl p-6 flex flex-col items-center justify-center h-48">
+                <i class="fas fa-running text-4xl mb-3"></i>
+                <h3 class="text-xl font-bold mb-2">Endless Runner (Coming Soon)</h3>
+                <p class="text-center opacity-90">Run as far as you can!</p>
+            </a>
+            
+            <!-- Game Box 5 -->
+            <a href="https://example.com/game5" target="_blank" class="game-box rounded-xl p-6 flex flex-col items-center justify-center h-48">
+                <i class="fas fa-car text-4xl mb-3"></i>
+                <h3 class="text-xl font-bold mb-2">Racing Pro (Coming Soon)</h3>
+                <p class="text-center opacity-90">Speed through amazing tracks</p>
+            </a>
+            
+            <!-- Game Box 6 -->
+            <a href="https://example.com/game6" target="_blank" class="game-box rounded-xl p-6 flex flex-col items-center justify-center h-48">
+                <i class="fas fa-ghost text-4xl mb-3"></i>
+                <h3 class="text-xl font-bold mb-2">Ghost Hunters (Coming Soon)</h3>
+                <p class="text-center opacity-90">Find ghosts in the dark</p>
+            </a>
+            
+            <!-- Game Box 7 - Lucky Dice -->
+            <a href="https://example.com/game1" target="_blank" class="game-box rounded-xl p-6 flex flex-col items-center justify-center h-48">
+                <i class="fas fa-dice text-4xl mb-3"></i>
+                <h3 class="text-xl font-bold mb-2">Lucky Dice (Coming Soon)</h3>
+                <p class="text-center opacity-90">Roll the dice and win big!</p>
+            </a>
+            
+            <!-- Game Box 8 -->
+            <a href="https://example.com/game8" target="_blank" class="game-box rounded-xl p-6 flex flex-col items-center justify-center h-48">
+                <i class="fas fa-fighter-jet text-4xl mb-3"></i>
+                <h3 class="text-xl font-bold mb-2">Air Combat (Coming Soon)</h3>
+                <p class="text-center opacity-90">Dominate the skies</p>
+            </a>
+            
+            <!-- Game Box 9 -->
+            <a href="https://example.com/game9" target="_blank" class="game-box rounded-xl p-6 flex flex-col items-center justify-center h-48">
+                <i class="fas fa-football-ball text-4xl mb-3"></i>
+                <h3 class="text-xl font-bold mb-2">Football Fever (Coming Soon)</h3>
+                <p class="text-center opacity-90">Score the winning goal</p>
+            </a>
+        </div>
+        
+        <footer class="mt-16 text-center text-sm opacity-80">
+            <p>© 2023 Game Links Hub. All games belong to their respective owners.</p>
+            <div class="mt-4 space-x-4">
+                <a href="#" class="hover:text-white"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="hover:text-white"><i class="fab fa-discord"></i></a>
+                <a href="#" class="hover:text-white"><i class="fab fa-github"></i></a>
+            </div>
+        </footer>
+    </div>
+    
+    <script>
+        // Add some interactive effects
+        document.querySelectorAll('.game-box').forEach(box => {
+            box.addEventListener('mouseenter', () => {
+                box.style.transform = 'translateY(-5px)';
+            });
+            
+            box.addEventListener('mouseleave', () => {
+                box.style.transform = 'translateY(0)';
+            });
+        });
+    </script>
+</body>
+</html>
